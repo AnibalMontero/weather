@@ -1,0 +1,28 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Indicativo</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Provincia</th>
+      <th scope="col">Altitud</th>
+      <th scope="col">Latitud</th>
+      <th scope="col">Longitud</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @valores2.each do |clave, valor| %>
+    <tr>
+      <th scope="row"><%= clave["indicativo"] %></th>
+      <td><%= clave["nombre"] %></td>
+      <td><%= clave["provincia"] %></td>
+      <td><%= clave["altitud"] %></td>
+      <td><%= clave["latitud"] %></td>
+      <td><%= clave["longitud"] %></td>
+
+     
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
